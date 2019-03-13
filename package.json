@@ -4,6 +4,7 @@
 	"description": "A surf shop built with Node, Express, MongoDB, and various other technologies",
 	"private": true,
 	"author": "Brett Hartman <brehardev@gmail.com> (http://bretthartman.me)",
+	"license": "MIT",
 	"main": "./bin/www",
 	"scripts": {
 		"dev": "nodemon ./bin/www",
@@ -19,7 +20,12 @@
 		"ejs": "~2.5.7",
 		"express": "~4.16.0",
 		"http-errors": "~1.6.2",
-		"morgan": "~1.9.0"
+		"mongoose": "^5.4.19",
+		"morgan": "~1.9.0",
+		"passport": "^0.4.0"
 	},
-	"license": "MIT"
+	"devDependencies": {
+		"dotenv": "^6.2.0",
+		"locus": "^2.0.1"
+	}
 }
