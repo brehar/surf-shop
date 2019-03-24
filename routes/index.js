@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const { postRegister } = require('../controllers/index');
+
 router.get('/', (req, res) => {
 	res.render('index', { title: 'Home' });
 });
@@ -9,9 +11,7 @@ router.get('/register', (req, res) => {
 	res.send('GET /register');
 });
 
-router.post('/register', (req, res) => {
-	res.send('POST /register');
-});
+router.post('/register', postRegister);
 
 router.get('/login', (req, res) => {
 	res.send('GET /login');
