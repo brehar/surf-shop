@@ -29,20 +29,20 @@ router.put('/profile/:user_id', (req, res) => {
 	res.send('PUT /profile/:user_id');
 });
 
-router.get('/forgot-password', (req, res) => {
-	res.send('GET /forgot-password');
+router.get('/forgot', (req, res) => {
+	res.send('GET /forgot');
 });
 
-router.put('/forgot-password', (req, res) => {
-	res.send('PUT /forgot-password');
+router.put('/forgot', (req, res) => {
+	res.send('PUT /forgot');
 });
 
-router.get('/reset-password/:token', (req, res) => {
-	res.send('GET /reset-password/:token');
+router.get('/reset/:token', (req, res) => {
+	res.send('GET /reset/:token');
 });
 
-router.put('/reset-password/:token', (req, res) => {
-	res.send('PUT /reset-password/:token');
+router.put('/reset/:token', (req, res) => {
+	res.send('PUT /reset/:token');
 });
 
 module.exports = router;
